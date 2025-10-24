@@ -13,7 +13,7 @@
 │   ├──
 ├── Prompts                                # Contains prompt for LLM annotations
 │   ├── Prompt_for_task_type_annotations.pdf
-│   └── Prompt_for_contribution_type_annotatinos
+│   └── Prompt_for_contribution_type_annotatinos.pdf
 ├──Dataset
 │   └── combined_whole_dataset_per_comment.json.zip
 │       # 12,043 comments + 6,912 intro commits + 2,948 first-change commits
@@ -55,7 +55,17 @@ Includes final adjudicated labels after disagreement resolution.
 
 * **Models:** `gpt-oss-20b` and `mistral-small-3.2`
 * **Annotation Scopes:** Task Type and Contribution Type
-* **`dawid_skene.py`:** Performs Dawid–Skene EM aggregation with human labels as gold.
+* **`dawid_skene.py`: * ** Implements the Dawid–Skene Expectation–Maximization (DS-EM) algorithm for semi-supervised label aggregation, using human annotations as the gold set. It estimates true labels, annotator reliability (confusion matrices), and class priors to produce confidence-scored consensus annotations across multiple LLM annotators.
+
+---
+
+### **Prompts**
+
+* Prompt_for_task_type_annotations.pdf  # For annotating task types
+* Prompt_for_contribution_type_annotatinos.pdf # For annotating contribution types
+* **Run this prompt using ollama, set temperature=0**
+* **models=[gpt-oss-20b,mistral-small-3.2]**
+
 
 ---
 
@@ -69,19 +79,4 @@ Each record links a comment with its associated commits.
 
 ---
 
-## 📜 Citation
-
-If you use this dataset, please cite:
-
-```bibtex
-@dataset{oss_llm_annotations_2025,
-  title   = {LLM-Assisted Code: Annotations & Commits Dataset},
-  author  = {Al Mujahid, Abdullah and Collaborators},
-  year    = {2025},
-  note    = {Human and LLM annotations of code comments with linked commit metadata},
-  url     = {<repo_url>}
-}
-```
-
----
 
