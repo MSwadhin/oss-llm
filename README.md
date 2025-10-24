@@ -13,7 +13,9 @@
 ├──Dataset
 │   └── combined_whole_dataset_per_comment.json.zip
 │       # 12,043 comments + 6,912 intro commits + 2,948 first-change commits
-|
+├──Prompts                                # Contains prompt for LLM annotations
+│   ├── Prompt_for_task_type_annotations.pdf
+│   └── Prompt_for_contribution_type_annotatinos
 └── README.md
 ```
 
