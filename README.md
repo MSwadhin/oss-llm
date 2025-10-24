@@ -8,7 +8,7 @@
 ├── DS-EM/                                # Dawid–Skene EM aggregation for LLM annotations
 │   ├── Contribution Type/                # LLM votes for contribution labels
 │   ├── Task Type/                        # LLM votes for task labels
-│   └── dawid_skene.py                    # DS-EM script using human gold for aggregation
+│   └── dawid_skene.py                    # DS-EM script using human annotations as gold set for aggregating LLM annotations
 ├──Dataset
 │   └── combined_whole_dataset_per_comment.json.zip
 │       # 12,043 comments + 6,912 intro commits + 2,948 first-change commits
