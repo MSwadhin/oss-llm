@@ -24,7 +24,7 @@
 
 ## 🧩 Contents Overview
 
-### **Human Annotations** (`annotations_500_task_contr`)
+### **Human Annotations** 
 
 Two annotators (**A** & **B**) labeled each comment for:
 
