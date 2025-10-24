@@ -2,14 +2,19 @@
 Analysis of LLM Usage in Open Source Software Projects from Self Admitted Comments and Linked Commits
 
 
-# Directory
+.
+├─ annotations_500_task_contr/              # Human annotations (500 comments)
+│  ├─ ...                                    # Includes A/B labels + resolved final labels
+│
+├─ DS-EM/                                    # Dawid–Skene EM over LLM annotators
+│  ├─ Contribution Type/                      # Raw LLM votes for contribution labels
+│  ├─ Task Type/                              # Raw LLM votes for task labels
+│  └─ dawid_skene.py                          # DS-EM with human gold for calibration/eval
+│
+├─ data/
+│  └─ combined_whole_dataset_per_comment.json.zip
+│      # 12,043 comments + 6,912 intro commits + 2,948 first-change commits
+│
+└─ README.md
 
---Dataset
-----
---Annotations
----- DS-EM
-
-
-# Dataset
- ### Contains a complete dataset consisting 12,043 comment, their annotations of task type and contribution type along with associated first and second commit details.
   
