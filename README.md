@@ -4,7 +4,8 @@
 ```
 .
 ├──Annotation
-│   ├──annotations_500_task_contr/        # Human annotations (500 comments)
+│   ├──annotations_500_task_contr.csv        # Human annotations (500 comments)
+|   ├──Instructions for Open-Coding Annotation and Developing a Taxonomy of Developer LLM Usage from GitHub Code Comments.pdf        # Annotation Instruction
 ├── DS-EM/                                # Dawid–Skene EM aggregation for LLM annotations
 │   ├── Contribution Type/                # LLM votes for contribution labels
 │   ├── Task Type/                        # LLM votes for task labels
