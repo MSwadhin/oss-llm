@@ -3,18 +3,16 @@
 
 ```
 .
-├── annotations_500_task_contr/          # Human annotations (500 comments)
-│   └── ...                              # Includes human annotations
-│
-├── DS-EM/                               # Dawid–Skene EM aggregation for LLM annotations
+├──Annotation
+│   ├──annotations_500_task_contr/        # Human annotations (500 comments)
+├── DS-EM/                                # Dawid–Skene EM aggregation for LLM annotations
 │   ├── Contribution Type/                # LLM votes for contribution labels
 │   ├── Task Type/                        # LLM votes for task labels
 │   └── dawid_skene.py                    # DS-EM script using human gold for aggregation
-│
-├── data/
+├──Dataset
 │   └── combined_whole_dataset_per_comment.json.zip
 │       # 12,043 comments + 6,912 intro commits + 2,948 first-change commits
-│
+|
 └── README.md
 ```
 
