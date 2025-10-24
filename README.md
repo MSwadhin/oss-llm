@@ -55,7 +55,8 @@ Includes final adjudicated labels after disagreement resolution.
 
 * **Models:** `gpt-oss-20b` and `mistral-small-3.2`
 * **Annotation Scopes:** Task Type and Contribution Type
-* **`dawid_skene.py`: * ** Implements the Dawid–Skene Expectation–Maximization (DS-EM) algorithm for semi-supervised label aggregation, using human annotations as the gold set. It estimates true labels, annotator reliability (confusion matrices), and class priors to produce confidence-scored consensus annotations across multiple LLM annotators.
+* **`dawid_skene.py`: * **
+  Implements the Dawid–Skene Expectation–Maximization (DS-EM) algorithm for semi-supervised label aggregation, using human annotations as the gold set. It estimates true labels, annotator reliability (confusion matrices), and class priors to produce confidence-scored consensus annotations across multiple LLM annotators.
 
 ---
 
@@ -63,7 +64,7 @@ Includes final adjudicated labels after disagreement resolution.
 
 * Prompt_for_task_type_annotations.pdf  # For annotating task types
 * Prompt_for_contribution_type_annotatinos.pdf # For annotating contribution types
-* **Run this prompt using ollama, set temperature=0**
+* **Run these prompts using ollama, set temperature=0**
 * **models=[gpt-oss-20b,mistral-small-3.2]**
 
 
