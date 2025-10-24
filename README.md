@@ -43,7 +43,7 @@ Includes final adjudicated labels after disagreement resolution.
 **Contribution Type Labels**
 
 * Implementation
-* Knowledge / Idea Seeking
+* Knowledge and Concept Support
 * Artifact Generation
 * Generic Mention & Indeterminate
 
