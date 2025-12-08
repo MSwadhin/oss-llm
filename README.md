@@ -17,6 +17,9 @@
 ├──Dataset
 │   └── combined_whole_dataset_per_comment.json.zip
 │       # 12,043 comments + 6,912 intro commits + 2,948 first-change commits
+Scripts
+│   └── contains scripts for collecting and analyzing comments and commit messages
+│       
 └── README.md
 ```
 
