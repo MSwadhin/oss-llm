@@ -77,22 +77,22 @@ Includes final adjudicated labels after disagreement resolution.
 
 * **12 043 comments where developers mention use of LLMs**
 * **Keywords used to look for LLM usage:**
-* ***ChatGPT***,
-* ***GPT***,
-* ***Copilot***,
-* ***GitHub Copilot",
-* ***AI***,
-* ***LLM***,
-* ***Claude***,
-* ***Bard***,
-* ***Gemini***,
-* ***Code Llama***,
-* ***LLaMA***,
-* ***Meta AI***,
-* ***Tabnine***,
-* ***CodeWhisperer***,
-* ***Amazon CodeWhisperer***,
-* ***Large Language Model***,
+    * ***ChatGPT***,
+    * ***GPT***,
+    * ***Copilot***,
+    * ***GitHub Copilot***,
+    * ***AI***,
+    * ***LLM***,
+    * ***Claude***,
+    * ***Bard***,
+    * ***Gemini***,
+    * ***Code Llama***,
+    * ***LLaMA***,
+    * ***Meta AI***,
+    * ***Tabnine***,
+    * ***CodeWhisperer***,
+    * ***Amazon CodeWhisperer***,
+    * ***Large Language Model***,
 * **6 912 introductory commits**
 * **2 948 first-change commits**
 
