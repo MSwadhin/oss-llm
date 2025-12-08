@@ -92,7 +92,7 @@ Includes final adjudicated labels after disagreement resolution.
     * ***Tabnine***,
     * ***CodeWhisperer***,
     * ***Amazon CodeWhisperer***,
-    * ***Large Language Model***,
+    * ***Large Language Model***
 * **6 912 introductory commits**
 * **2 948 first-change commits**
 
