@@ -1,0 +1,40 @@
+"encoder": {
+    "type": "unixcoder",
+    "model_name": "microsoft/unixcoder-base",
+    "pooling": "mean",
+    "batch_size": 64,
+    "normalize_embeddings": true
+  },
+
+
+"encoder": {
+  "type": "sentence_transformer",
+  "model_name": "sentence-transformers/all-mpnet-base-v2",
+  "batch_size": 64,
+  "normalize_embeddings": true
+}
+
+
+"encoder": {
+  "type": "codebert",
+  "pooling": "mean",
+  "batch_size": 64,
+  "normalize_embeddings": true
+}
+
+
+"encoder": {
+  "type": "graphcodebert",
+  "pooling": "mean",
+  "batch_size": 64,
+  "normalize_embeddings": true
+}
+
+
+"encoder": {
+  "type": "hf_transformer",
+  "model_name": "microsoft/unixcoder-base",
+  "pooling": "mean",
+  "batch_size": 64,
+  "normalize_embeddings": true
+}

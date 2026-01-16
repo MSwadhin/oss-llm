@@ -1,0 +1,59 @@
+{
+  "input_json": "second_commits.json",
+  "outdir": "sbert_2_3_dedup_reduced",
+  "text_source": "message",
+  "hdbscan": { "enabled": true, "min_cluster_size": 5, "min_samples": 1, "prediction_data": true },
+  "umap": { "enabled": true, "n_neighbors": 10, "n_components": 5, "min_dist": 0.0, "metric": "cosine", "random_state": 42 },
+  "preprocess": {
+    "lowercase": true,
+    "strip_pr_issue_refs": true,
+    "min_chars": 2,
+    "nlp": {
+      "enabled": true,
+      "lemmatize": true,
+      "stem": false
+    }
+  },
+
+  "encoder": {
+    "type": "sentence_transformer",
+    "model_name": "sentence-transformers/all-mpnet-base-v2",
+    "batch_size": 64,
+    "normalize_embeddings": true
+  },
+
+  "vectorizer": {
+    "enabled": true,
+    "stop_words": "english",
+    "ngram_range": [2, 3],
+    "min_df": 2
+  },
+
+  "bertopic": {
+    "min_topic_size": 5,
+    "nr_topics": null,
+    "calculate_probabilities": true,
+    "verbose": true
+  },
+
+  "postprocess": {
+    "reduce_topics_to": 11,
+    "reduce_outliers": false,
+    "reduce_outliers_strategy": "probabilities"
+  },
+
+  "clusters_output": {
+    "message_field": "message_raw",
+    "include_outliers": true
+  },
+
+  "save": {
+    "save_model": true,
+    "model_dirname": "bertopic_model",
+    "write_csv": true,
+    "write_json": true
+  },
+  "dedup": {
+    "key": "message_raw"
+  }
+}
