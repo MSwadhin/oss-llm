@@ -1,13 +1,13 @@
 {
   "input_json": "second_commits.json",
-  "outdir": "sbert_2_3_dedup_reduced",
+  "outdir": "baai_dedup_3",
   "text_source": "message",
-  "hdbscan": { "enabled": true, "min_cluster_size": 5, "min_samples": 1, "prediction_data": true },
-  "umap": { "enabled": true, "n_neighbors": 10, "n_components": 5, "min_dist": 0.0, "metric": "cosine", "random_state": 42 },
+  "hdbscan": { "enabled": true, "min_cluster_size": 10, "min_samples": 5, "prediction_data": true },
+  "umap": { "enabled": true, "n_neighbors": 10, "n_components": 10, "min_dist": 0.2, "metric": "cosine", "random_state": 42 },
   "preprocess": {
     "lowercase": true,
     "strip_pr_issue_refs": true,
-    "min_chars": 2,
+    "min_chars": 4,
     "nlp": {
       "enabled": true,
       "lemmatize": true,
@@ -17,7 +17,7 @@
 
   "encoder": {
     "type": "sentence_transformer",
-    "model_name": "sentence-transformers/all-mpnet-base-v2",
+    "model_name": "BAAI/bge-base-en-v1.5",
     "batch_size": 64,
     "normalize_embeddings": true
   },
@@ -37,7 +37,7 @@
   },
 
   "postprocess": {
-    "reduce_topics_to": 11,
+    "reduce_topics_to": null,
     "reduce_outliers": false,
     "reduce_outliers_strategy": "probabilities"
   },
@@ -55,5 +55,17 @@
   },
   "dedup": {
     "key": "message_raw"
+  },
+  "patch": {
+    "enabled": false,
+    "include_files": true,
+    "include_added_removed": true,
+    "include_keywords": true,
+    "max_files": 10,
+    "max_added_lines": 10,
+    "max_removed_lines": 10,
+    "max_chars": 1500
   }
+
+
 }
